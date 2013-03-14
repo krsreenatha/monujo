@@ -1,0 +1,11 @@
+{
+	"require": {
+		"laravel/framework": "4.0.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"Monujo": "app/src/"
+		}
+	},
+	"minimum-stability": "dev"
+}
