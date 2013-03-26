@@ -7,7 +7,7 @@
  *
  *
  */
-class UsersGroupsTableSeeder extends Seeder {
+class GroupsTableSeeder extends Seeder {
 
 	public function run(){
 		try
