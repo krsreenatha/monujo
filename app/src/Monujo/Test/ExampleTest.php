@@ -1,4 +1,4 @@
-<?php
+<?php namespace Monujo\Test;
 
 class ExampleTest extends TestCase {
 
