@@ -1,7 +1,8 @@
 {
 	"require": {
 		"laravel/framework": "4.0.*",
-		"laravelbook/laravel4-powerpack": "dev-master"
+		"laravelbook/laravel4-powerpack": "dev-master",
+		"cartalyst/sentry": "2.0.*"
 	},
 	"autoload": {
 		"psr-0": {

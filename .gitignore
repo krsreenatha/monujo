@@ -2,3 +2,9 @@
 composer.phar
 composer.lock
 .DS_Store
+
+.project
+.settings/
+.buildpath
+
+*~

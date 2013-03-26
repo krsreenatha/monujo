@@ -1,7 +1,14 @@
 <?php namespace Monujo\Controller;
 
 use View;
-
+/**
+ * 
+ * Monujo
+ *
+ * @author Alessandro Arnodo
+ *
+ *
+ */
 class HomeController extends BaseController {
 
 	/*

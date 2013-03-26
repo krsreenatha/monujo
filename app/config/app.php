@@ -113,6 +113,7 @@ return array(
 
 		//custom
 		'LaravelBook\Laravel4Powerpack\Providers\PowerpackServiceProvider',
+		'Cartalyst\Sentry\SentryServiceProvider',
 
 	),
 
@@ -183,6 +184,7 @@ return array(
 		'HTML' => 'LaravelBook\Laravel4Powerpack\Facades\HTMLFacade',
 		'Form' => 'LaravelBook\Laravel4Powerpack\Facades\FormFacade',
 		'Str' => 'LaravelBook\Laravel4Powerpack\Facades\StrFacade',
+		'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry'
 
 	),
 
