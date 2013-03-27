@@ -45,3 +45,8 @@ cd into the build folder and from your command line run:
 
 	chmod +x setup.sh
 	./setup.sh
+	
+You can now login to the application with:
+
+	email: admin@admin.com
+	password: admin
