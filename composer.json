@@ -2,8 +2,12 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"laravelbook/laravel4-powerpack": "dev-master",
-		"cartalyst/sentry": "2.0.*"
+		"cartalyst/sentry": "2.0.*",
+		"jasonlewis/expressive-date": "1.*"
 	},
+    "require-dev": {
+        "mockery/mockery": "dev-master"
+    },
 	"autoload": {
 		"psr-0": {
 			"Monujo": "app/src/"
