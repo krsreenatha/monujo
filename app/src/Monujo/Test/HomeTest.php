@@ -13,7 +13,7 @@ class HomeTest extends TestCase {
 
 		$this->assertTrue($this->client->getResponse()->isOk());
 
-		$this->assertCount(2, $crawler->filter('body:contains("Monujo")'));
+		$this->assertCount(1, $crawler->filter('h3:contains("Monujo")'));
 	}
 
 }

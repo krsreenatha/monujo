@@ -1,6 +1,9 @@
 #!/bin/bash
 
+
 cd ..
+
+php artisan key:generate
 
 php artisan migrate --package=cartalyst/sentry
 
