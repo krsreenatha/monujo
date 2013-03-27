@@ -68,7 +68,7 @@ return array(
 		|
 		*/
 
-		'model' => 'Cartalyst\Sentry\Groups\Eloquent\Group',
+		'model' => 'Monujo\Model\User\Group',
 
 	),
 
@@ -92,7 +92,7 @@ return array(
 		|
 		*/
 
-		'model' => 'Cartalyst\Sentry\Users\Eloquent\User',
+		'model' => 'Monujo\Model\User',
 
 		/*
 		|--------------------------------------------------------------------------

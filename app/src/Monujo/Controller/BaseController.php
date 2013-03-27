@@ -3,19 +3,20 @@
 use View;
 use Controller;
 
+/**
+ * 
+ * Monujo
+ *
+ * @author Alessandro Arnodo
+ *
+ *
+ */
 class BaseController extends Controller {
 
-	/**
-	 * Setup the layout used by the controller.
-	 *
-	 * @return void
-	 */
-	protected function setupLayout()
+	public function __construct()
 	{
-		if ( ! is_null($this->layout))
-		{
-			$this->layout = View::make($this->layout);
-		}
+		// CSRF Protection
+		$this->beforeFilter('csrf', array('on' => 'post'));
 	}
 
 }

@@ -13,6 +13,8 @@ class UserTableSeeder extends Seeder {
 		$data = array(
 				'email' => 'admin@admin.com',
 				'password' => 'admin',
+				'first_name' => 'john',
+				'last_name' => 'doe',
 				'activated'   => 1,
 				'permissions' => array(
 						'admin' => 1,

@@ -1,52 +1,40 @@
-<?php namespace Monujo\Models;
+<?php namespace Monujo\Model;
 
-use Illuminate\Auth\UserInterface;
-use Illuminate\Auth\Reminders\RemindableInterface;
+use Cartalyst\Sentry\Users\Eloquent\User as SentryUserModel;
 
-class User extends Eloquent implements UserInterface, RemindableInterface {
-
-	/**
-	 * The database table used by the model.
-	 *
-	 * @var string
-	 */
-	protected $table = 'users';
+class User extends SentryUserModel {
 
 	/**
-	 * The attributes excluded from the model's JSON form.
-	 *
-	 * @var array
-	 */
-	protected $hidden = array('password');
-
-	/**
-	 * Get the unique identifier for the user.
-	 *
-	 * @return mixed
-	 */
-	public function getAuthIdentifier()
-	{
-		return $this->getKey();
-	}
-
-	/**
-	 * Get the password for the user.
+	 * Returns the user full name, it simply
+	 * concatenates the first and last name.
 	 *
 	 * @return string
 	 */
-	public function getAuthPassword()
+	public function fullName()
 	{
-		return $this->password;
+		return $this->first_name . ' ' . $this->last_name;
 	}
 
 	/**
-	 * Get the e-mail address where password reminders are sent.
+	 * Returns the date of the user creation,
+	 * on a good and more readable format :)
 	 *
 	 * @return string
 	 */
-	public function getReminderEmail()
+	public function created_at()
 	{
-		return $this->email;
+		return \ExpressiveDate::make($this->created_at)->getRelativeDate();
+	}
+
+	/**
+	 * Returns the date of the user last update,
+	 * on a good and more readable format :)
+	 *
+	 * @return string
+	 */
+	public function updated_at()
+	{
+		return \ExpressiveDate::make($this->updated_at)->getRelativeDate();
 	}
 
 }

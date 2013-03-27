@@ -1,19 +1,19 @@
 <?php namespace Monujo\Test;
 
-class ExampleTest extends TestCase {
+class HomeTest extends TestCase {
 
 	/**
 	 * A basic functional test example.
 	 *
 	 * @return void
 	 */
-	public function testBasicExample()
+	public function testMonujo()
 	{
 		$crawler = $this->client->request('GET', '/');
 
 		$this->assertTrue($this->client->getResponse()->isOk());
 
-		$this->assertCount(1, $crawler->filter('h1:contains("Hello Monujo!")'));
+		$this->assertCount(2, $crawler->filter('body:contains("Monujo")'));
 	}
 
 }

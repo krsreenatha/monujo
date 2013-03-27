@@ -11,4 +11,19 @@
 |
 */
 
-Route::get('/', 'Monujo\Controller\HomeController@showWelcome');
+/*
+ |--------------------------------------------------------------------------
+| Authentication and Authorization Routes
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+Route::get('/', 'Monujo\Controller\HomeController@getHome');
+
+# Login
+Route::get('login', 'Monujo\Controller\AuthController@getLogin');
+Route::post('login', 'Monujo\Controller\AuthController@postLogin');
+
+Route::get('logout', 'Monujo\Controller\AuthController@getLogout');
+
